@@ -1,0 +1,2 @@
+This is from the original file
+This is from the duplicate file

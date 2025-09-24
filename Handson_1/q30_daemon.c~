@@ -1,0 +1,48 @@
+/*
+===========================================================================================================================
+Name : 30_daemon.c
+Author : Asutosh Panda
+Description : Write a program to run a script at a specific time using a Daemon process
+
+Date: 4th Sept, 2025.
+===========================================================================================================================
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <time.h>
+
+int main() {
+    int pid = fork();
+    if (pid < 0) {
+        printf("fork failed");
+        return 1;
+    }
+    if (pid > 0) {
+        printf("Daemon started with PID %d\n", pid);
+        return 0;
+    }
+    while (1) {
+        time_t now = time(NULL);
+        struct tm *t = localtime(&now);
+
+
+        if (t->tm_hour == 18 && t->tm_min == 3) {
+            system("/home/nani/handson1/script.sh");
+            sleep(60);
+        }
+
+        sleep(10);
+    }
+
+    return 0;
+}
+/*
+=====OUTPUT================================================================================================================
+nani@Nani:~/handson1$ sudo ./a.out
+[sudo] password for nani:            
+Current policy : 0
+New priority: 10
+===========================================================================================================================
+*/
+
