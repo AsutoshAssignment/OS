@@ -1,0 +1,6 @@
+Sat Nov  8 11:38:01 2025 | manager1 | MODIFY_CUSTOMER | Rs0.00 | Modified customer cust1
+Sat Nov  8 11:38:27 2025 | manager1 | PASSWORD_CHANGE | Rs0.00 | Password updated
+Sat Nov  8 11:39:04 2025 | manager1 | FREEZE_ACCOUNT | Rs0.00 | Frozen account cust1
+Mon Nov 10 16:43:15 2025 | cust1 | LOAN_APPLICATION | Rs100.00 | Loan applied
+Mon Nov 10 16:48:35 2025 | cust1 | DEPOSIT | Rs20.00 | Cash deposit
+Mon Nov 10 18:28:42 2025 | cust1 | DEPOSIT | Rs10.00 | Cash deposit
