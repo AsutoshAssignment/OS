@@ -1,0 +1,7 @@
+cust1|cust11|customer|2030.00|active|1001
+cust2|cust2|customer|2000.00|active|1002
+cust3|cust3|customer|1500.00|active|1003
+emp1|emp1|employee|0.00|active|6001
+emp2|emp2|employee|0.00|active|6002
+manager1|manager11|manager|0.00|active|8001
+admin|admin123|admin|0.00|active|9001
